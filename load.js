@@ -8,7 +8,10 @@ document.getElementsByClassName("loader")[0].innerHTML =
 let loader = document.querySelector(".loader");
 window.addEventListener("load", () => {
   loader.classList.add("loaded");
-  addEventListener("animationend", () => {
+  loader.addEventListener("animationend", () => {
     document.body.removeChild(loader);
   });
+   // window.onload = function() {
+   //    document.body.classList.toggle("loader"); // Apni loader class ko toggle karte hain
+   //  };
 });
