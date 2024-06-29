@@ -6,14 +6,10 @@ document.getElementsByClassName("loader")[0].innerHTML =
   "<img src=" + loadImg + 'alt="load-img" class="load-img"><h2>Loading...</h2>';
 
 let loader = document.querySelector(".loader");
-// window.addEventListener("load", () => {
-//   loader.classList.add("loaded");
-//   loader.addEventListener("animationend", () => {
-//     document.body.removeChild(loader);
-//   });
- window.onload = function() {
-    loader.classList.add("loaded");
-    loader.addEventListener("animationend", () => {
-    document.body.removeChild(loader); // Apni loader class ko toggle karte hain
-  };
+window.addEventListener("load", () => {
+  loader.classList.add("loaded");
+  loader.addEventListener("animationend", () => {
+    document.body.removeChild(loader);
+  });
+
 });
